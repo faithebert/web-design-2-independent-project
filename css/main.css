@@ -154,7 +154,7 @@ body {
 }
 
 li:before {
-  content: 'U+1F90D';
+  content: U+1F90D;
   margin-left: -20px;
   margin-right: 10px;
 }
