@@ -13,16 +13,17 @@
   <ul class="skip-links">
     <li><a href="#main">Jump to main content</a></li>
     <li><a href="#nav">Jump to navigation</a></li>
-    <li><a href="#quote">Jump to testimonial</a></li>
+    <li><a href="#about">Jump to about us</a></li>
+    <li><a href="#spotlight">Jump to pet spotlight</a></li>
+    <li><a href="#announcement">Jump to announcements</a></li>
   </ul>
 
   <header role="banner">
-
     <div class="covid-announcement">
       <p>We are currently closed to the public until further notice due to the Covid 19 pandemic. Contact us here.</p>
     </div>
 
-    <nav role="navigation">
+    <nav id="nav" role="navigation">
       <div id="menuToggle">
         <input type="checkbox">
 
@@ -54,10 +55,9 @@
         <img src="images/png/Banner-home.png" alt="">
       </div>
     </div>
-
   </header>
 
-  <main>
+  <main id="main">
     <div>
       <h2>ALL PETS DESERVE:</h2>
       <div>
@@ -79,7 +79,7 @@
         <p>Access to veterinary care to keep them healthy to live out their lives happily and comfortably.</p>
       </div>
     </div>
-    <div class="pet-spotlight">
+    <div id="pet-spotlight" class="pet-spotlight">
       <img src="images/jpg/brandy.jpg" alt="">
       <div class="brandy-text">
         <h3>PET SPOTLIGHT</h3>
@@ -98,12 +98,12 @@
         <a class="contact-button" href="#">Contact</a>
       </div>
     </div>
-    <div class="about">
+    <div id="about" class="about">
       <h2>ABOUT US</h2>
       <img src="images/png/cute-corgi-pup.png" alt="">
       <p>The Arnprior & District Humane Society is a no-kill shelter that takes in animals from Arnprior and the surrounding area. We are a non-profit organization supported through fundraising events, sponsor assistance, and kind donations. We are dedicated to finding loving, forever homes for abused, abandoned and neglected animals. It is your financial support that allows us to continue rescuing, housing, and caring for these wonderful animals that would otherwise be homeless. We are affiliated with the Ontario Society for Prevention of Cruelty to Animals (OSPCA).</p>
     </div>
-    <div class="events">
+    <div id="announcements" class="events">
       <h2>EVENTS AND ANNOUCENMENTS</h2>
       <div class="card-1">
         <p class="date-number">08</p>
@@ -111,13 +111,80 @@
         <p class="event-name">We are now on Instagram!</p>
         <img src="images/jpg/instagram.jpg" alt="">
       </div>
-
+      <div class="card-2">
+        <p class="date-number">15</p>
+        <p class="date-month">DEC</p>
+        <p class="event-name">Get your pet's photo taken with Santa</p>
+        <img src="images/jpg/santa.jpg" alt="">
+      </div>
+      <div class="card-3">
+        <p class="date-number">22</p>
+        <p class="date-month">DEC</p>
+        <p class="event-name">How to care for a stray - free webinar</p>
+        <img src="images/jpg/stray-webinar.jpg" alt="">
+      </div>
     </div>
+    <div class="sponsors">
+      <h4>Thank you to our sponsors</h4>
+      <img src="images/png/pedigree-logo.png" alt="">
+      <img src="images/png/Royal_Canin_logo.png" alt="">
+      <img src="images/png/petvalue-logo.png" alt="">
+    </div>
+
   </main>
 
-
-
-
-
+  <footer>
+    <div class="newsletter">
+      <form id="form" method="POST" action="https://formspree.io/missfaithannee@gmail.com">
+        <p>Want photos of cute kitties and pups sent to your inbox? We know, so do we! Sign up for our newsletter to keep updated on all things Arnprior Humane Society.</p>
+        <div>
+          <label for="email">Enter your email</label>
+          <input type="email" id="email" required>
+        </div>
+      </form>
+    </div>
+    <div role="contentinfo" class="footer">
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="adopt.html">Adopt</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li class="donate-button">
+            <a href="#">Donate</a>
+          </li>
+        </ul>
+      </nav>
+      <p>The Arnprior & District Humane Society can only accept animals from the local bylaw officers.  If you have found a stray cat or dog in Arnprior, or a stray dog in McNab/Braeside please contact 613 809-7048 to arrange pick up</p>
+      <p>If you suspect <span class="bold">Animal Cruelty or Neglect</span> please call the Government of Ontario’s  new toll-free number available 24/7 to report animal welfare concerns: 1-833-9ANIMAL (1-833-926-4625)</p>
+      <div class="social-icons">
+        <a href="#">
+          <i>
+            <img src="images/png/facebook.png" alt="">
+          </i>
+        </a>
+        <a href="#">
+          <i>
+            <img src="images/png/youtube.png" alt="">
+          </i>
+        </a>
+        <a href="#">
+          <i>
+            <img src="images/png/twitter.png" alt="">
+          </i>
+        </a>
+        <a href="#">
+          <i>
+            <img src="images/png/instagram.png" alt="">
+          </i>
+        </a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
