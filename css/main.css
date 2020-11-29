@@ -148,3 +148,13 @@ body {
 {
   transform: none;
 }
+
+.pet-spotlight ul li {
+  list-style-type: none;
+}
+
+li:before {
+  content: 'U+1F90D';
+  margin-left: -20px;
+  margin-right: 10px;
+}
