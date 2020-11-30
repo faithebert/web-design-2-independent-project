@@ -297,13 +297,13 @@ h4 {
 }
 
 .single-before li {
-  padding-left: .5em;
-  text-indent: -1em;
+  padding-left: 2em;
+  text-indent: -2em;
   margin-bottom: .5em;
 }
 
 .single-before li::before {
-  content: "🤍 ";
+  content: "🐾 ";
 }
 
 .adopt-button {
@@ -313,10 +313,21 @@ h4 {
   text-decoration: none;
   padding: .5em 2em;
   position: absolute;
-  bottom: 200px;
+  bottom: 150px;
   right: 36px;
 }
 
-.adopt-button:hover {
+.adopt-button:hover, .button:hover  {
+  background-color: #FF9818;;
+}
+
+.button {
+  border-radius: 20px;
   background-color: #414141;
+  color: #ffff;
+  text-decoration: none;
+  padding: .5em 1.5em;
+  position: absolute;
+  bottom: 90px;
+  right: 36px;
 }
