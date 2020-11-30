@@ -151,6 +151,14 @@ img {
   transform: none;
 }
 
+.bold {
+  font-weight: 700;
+}
+
+.semi-bold {
+  font-weight: 600;
+}
+
 .covid {
   background-color: #CBECFC;
   color: #0171A8;
@@ -259,20 +267,56 @@ main div:first-child {
   margin-bottom: 25px;
 }
 
-.pet-spotlight ul li {
-  list-style-type: none;
+.pet-spotlight {
+  background-color: #E6F7FF;
+  padding-bottom: 36px;
+  position: relative;
 }
 
-li:before {
-  content: U+1F90D;
-  margin-left: -20px;
-  margin-right: 10px;
+.pet-spotlight h3:first-child {
+  margin-bottom: 0;
 }
 
-.bold {
-  font-weight: 700;
+.pet-name {
+  color: #03A5F4;
 }
 
-.semi-bold {
-  font-weight: 600;
+h4 {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.brandy-text {
+  margin: 36px;
+}
+
+.single-before {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.single-before li {
+  padding-left: .5em;
+  text-indent: -1em;
+  margin-bottom: .5em;
+}
+
+.single-before li::before {
+  content: "🤍 ";
+}
+
+.adopt-button {
+  border-radius: 20px;
+  background-color: #0171A8;
+  color: #ffff;
+  text-decoration: none;
+  padding: .5em 2em;
+  position: absolute;
+  bottom: 200px;
+  right: 36px;
+}
+
+.adopt-button:hover {
+  background-color: #414141;
 }
