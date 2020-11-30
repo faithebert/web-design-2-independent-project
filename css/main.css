@@ -247,10 +247,16 @@ main {
   margin-top: 175px;
 }
 
+main div:first-child {
+  text-align: center;
+  margin: 0 72px;
+}
+
 .blue-icon img {
-  width: 150px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 175px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 25px;
 }
 
 .pet-spotlight ul li {
