@@ -149,8 +149,10 @@ img {
   transform: none;
 }
 
-.covid-annoucenment {
-
+.covid {
+  background-color: #CBECFC;
+  color: #0171A8;
+  text-align: center;
 }
 
 .skip-links {
