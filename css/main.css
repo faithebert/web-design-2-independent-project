@@ -331,3 +331,9 @@ h4 {
   bottom: 90px;
   right: 36px;
 }
+
+.about {
+  margin: 0 36px;
+  padding: 36px 0;
+  align-items: center;
+}
