@@ -25,7 +25,7 @@
       <p class="milli">We are currently closed to the public until further notice due to the Covid 19 pandemic. Contact us <a href="#">here</a>.</p>
     </div>
 
-    <nav id="nav" role="navigation">
+    <nav class="mobile-nav">
       <div id="menuToggle">
         <input type="checkbox">
 
@@ -47,6 +47,17 @@
       </a>
     </nav>
 
+    <nav id="nav" role="navigation" class="desktop-nav">
+      <ul>
+        <a href="#"><li><img src="images/png/primary-logo.png" alt=""></li></a>
+        <a href="#"><li>About</li></a>
+        <a href="#"><li>Adopt</li></a>
+        <a class="donate-button" href="#"><li>Donate</li></a>
+      </ul>
+
+    </nav>
+
+
     <div class="banner">
       <div class="banner-text">
         <h1>Change their life - and yours</h1>
@@ -60,8 +71,8 @@
   </header>
 
   <main id="main">
-    <div>
-      <h2>ALL PETS DESERVE:</h2>
+    <div class="about">
+      <h2 class="tera">ALL PETS DESERVE:</h2>
       <div>
         <i class="blue-icon">
           <img src="images/svg/heart-icon.svg" alt="">
@@ -101,12 +112,12 @@
       </div>
     </div>
     <div id="about" class="about">
-      <h2>ABOUT US</h2>
+      <h2 class="tera">ABOUT US</h2>
       <img src="images/png/cute-corgi-pup.png" alt="">
       <p>The Arnprior & District Humane Society is a no-kill shelter that takes in animals from Arnprior and the surrounding area. We are a non-profit organization supported through fundraising events, sponsor assistance, and kind donations. We are dedicated to finding loving, forever homes for abused, abandoned and neglected animals. It is your financial support that allows us to continue rescuing, housing, and caring for these wonderful animals that would otherwise be homeless. We are affiliated with the Ontario Society for Prevention of Cruelty to Animals (OSPCA).</p>
     </div>
     <div id="announcement" class="events">
-      <h2>EVENTS AND ANNOUCENMENTS</h2>
+      <h2 class="tera">EVENTS AND ANNOUCENMENTS</h2>
       <div class="card-1">
         <p class="date-number peta">08</p>
         <p class="date-month mega">NOV</p>
@@ -131,23 +142,24 @@
 
   <footer>
     <div class="sponsors">
-      <h4>Thank you to our sponsors</h4>
+      <h4 class="semi-bold">Thank you to our sponsors</h4>
       <img src="images/png/pedigree-logo.png" alt="">
       <img src="images/png/Royal_Canin_logo.png" alt="">
-      <img src="images/png/petvalue-logo.png" alt="">
+      <img src="images/png/petvalu-logo.png" alt="">
     </div>
     <div class="newsletter">
       <form id="form" method="POST" action="https://formspree.io/missfaithannee@gmail.com">
         <p>Want photos of cute kitties and pups sent to your inbox? We know, so do we! Sign up for our newsletter to keep updated on all things Arnprior Humane Society.</p>
-        <div>
-          <label for="email">Enter your email</label>
+        <div class="email-form">
+          <label class="milli" for="email">Enter your email</label>
           <input type="email" id="email" required>
+          <button class="sign-up semi-bold" type="submit" name="button">Sign Up</button>
         </div>
       </form>
     </div>
     <div role="contentinfo" class="footer">
       <nav>
-        <ul>
+        <ul class="semi-bold giga">
           <li>
             <a href="index.html">Home</a>
           </li>

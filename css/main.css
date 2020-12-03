@@ -30,6 +30,10 @@ img {
   width: 100%;
 }
 
+.desktop-nav {
+  display: none;
+}
+
 #menuToggle
 {
   display: block;
@@ -55,7 +59,7 @@ img {
 
 #menuToggle a:hover
 {
-  color: #F19C3E;
+  color: #FF9818;
 }
 
 #menuToggle input
@@ -83,7 +87,7 @@ img {
   margin-bottom: 5px;
   position: relative;
 
-  background: #F19C3E;
+  background: #FF9818;
   border-radius: 3px;
 
   z-index: 1;
@@ -160,7 +164,7 @@ img {
 }
 
 .covid {
-  background-color: #CBECFC;
+  background-color: #E6F7FF;
   color: #0171A8;
   text-align: center;
   padding: 1em;
@@ -204,13 +208,15 @@ img {
   right: 50px;
 }
 
-nav {
+.mobile-nav {
   position: relative;
   margin-bottom: 10em;
 }
 
 h1 {
   text-transform: uppercase;
+  color: #414141;
+  padding-bottom: .8em;
 }
 
 .banner {
@@ -220,8 +226,10 @@ h1 {
 
 
 .banner-text p {
-  max-width: 150px;
-  margin-bottom: 2em;
+  min-width: 150px;
+  max-width: 300px;
+  margin: 0 10em 2em 0;
+  padding-bottom: 1em;
 }
 
 .banner-button {
@@ -230,12 +238,12 @@ h1 {
   color: #ffff;
   text-decoration: none;
   padding: 1em 3em;
-  z-index: 1000;
+  z-index: 100;
 }
 
 .banner-button:hover {
-  background-color: #CBECFC;
-  color: #414141;
+  background-color: #FF9818;
+  color: #ffff;
 }
 
 .banner-image {
@@ -243,7 +251,7 @@ h1 {
   right: -80px;
   bottom: -120px;
   width: 320px;
-  z-index: -1;
+  z-index: 1;
 }
 
 h2 {
@@ -251,13 +259,10 @@ h2 {
   text-align: center;
 }
 
-main {
-  margin-top: 175px;
-}
-
 main div:first-child {
   text-align: center;
-  margin: 0 72px;
+  padding: 175px 72px 0;
+  z-index: -2;
 }
 
 .blue-icon img {
@@ -318,7 +323,7 @@ h4 {
 }
 
 .adopt-button:hover, .button:hover  {
-  background-color: #FF9818;;
+  background-color: #FF9818;
 }
 
 .button {
@@ -332,10 +337,17 @@ h4 {
   right: 36px;
 }
 
+.about {
+  background-color: #ffff;
+}
+
 .about, .events {
-  margin: 0 36px;
-  padding: 36px 0;
+  padding: 36px;
   align-items: center;
+}
+
+.about img {
+  margin-top: 50px;
 }
 
 .date-number {
@@ -348,6 +360,7 @@ h4 {
 .date-month {
   top: 50px;
   left: 17px;
+  padding-top: .5em;
   position: absolute;
   text-shadow: 2px 2px #414141;
 }
@@ -357,11 +370,124 @@ h4 {
   left: 17px;
   position: absolute;
   text-shadow: 2px 2px #414141;
-  color: #CBECFC;
+  color: #E6F7FF;
 }
+
+.card-1 {
+  margin-top: 50px;
+}
+
 
 .card-1, .card-2, .card-3 {
   position: relative;
   color: #F4F4F4;
   font-weight: bolder;
+  margin-bottom: 25px;
+}
+
+.sponsors {
+  background-color: #ffff;
+  padding: 100px 36px;
+}
+
+.sponsors h4 {
+  text-transform: none;
+  color: #0171A8;
+  text-align: center;
+  margin: 0;
+}
+
+.sponsors img {
+  width: 188px;
+  margin: auto;
+  padding-top: 75px;
+}
+
+.newsletter {
+  background-color: #E6F7FF;
+  padding: 100px 36px;
+}
+
+.email-form input {
+  width: 100%;
+  border: none;
+  margin: 1em 0;
+}
+
+.sign-up {
+  border-radius: 20px;
+  background-color: #0171A8;
+  color: #ffff;
+  text-decoration: none;
+  padding: .5em 2em;
+  font-family: inherit;
+  border: none;
+  text-transform: uppercase;
+}
+
+.sign-up:hover {
+  background-color: #FF9818;
+}
+
+.footer {
+  padding: 0 36px;
+}
+
+footer nav ul {
+  list-style-type: none;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 50px 0;
+}
+
+footer nav ul a {
+  text-decoration: none;
+  color: #414141;
+}
+
+footer nav ul a:hover {
+  color: #FF9818;
+}
+
+.footer nav ul li {
+  margin: 25px;
+}
+
+.donate-button a {
+  border-radius: 20px;
+  background-color: #FF9818;
+  color: #ffff;
+  text-decoration: none;
+  padding: .5em 1.5em;
+}
+
+.donate-button a:hover {
+  background-color: #414141;
+  color: #ffff;
+}
+
+.social-icons a {
+  width: 50px;
+  margin: 0 .5em;
+}
+
+.social-icons {
+  padding: 36px 0 75px;
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 38em) {
+  .mobile-nav {
+    display: none;
+  }
+
+  .desktop-nav {
+    display: flex;
+  }
+
+  .desktop-nav ul {
+    display: flex;
+    justify-content: center;
+  }
 }
