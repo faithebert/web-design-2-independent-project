@@ -806,4 +806,8 @@ footer nav ul a:hover {
   .banner-text {
     max-width: 50em;
   }
+
+  .banner-image {
+    width: 35em;
+  }
 }
