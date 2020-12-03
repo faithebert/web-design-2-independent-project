@@ -224,6 +224,10 @@ h1 {
   position: relative;
 }
 
+.banner-text {
+  z-index: 1000;
+  position: relative;
+}
 
 .banner-text p {
   min-width: 150px;
@@ -261,8 +265,13 @@ h2 {
 
 main div:first-child {
   text-align: center;
-  padding: 175px 72px 0;
+  padding: 175px 72px 72px;
   z-index: -10;
+}
+
+.about-us p {
+  max-width: 400px;
+  margin: auto;
 }
 
 .blue-icon img {
@@ -343,12 +352,9 @@ h4 {
 
 .about, .events {
   padding: 36px;
-  align-items: center;
 }
 
-.about img {
-  margin-top: 50px;
-}
+
 
 .date-number {
   top: 10px;
@@ -495,6 +501,10 @@ footer nav ul a:hover {
     padding: 50px 36px;
   }
 
+  .desktop-nav ul a:hover {
+    color: #FF9818;
+  }
+
   .desktop-nav ul a {
     text-transform: uppercase;
     text-decoration: none;
@@ -507,13 +517,13 @@ footer nav ul a:hover {
 
   .banner-text {
     min-width: 350px;
-    max-width: 600px;
-    padding-right: 9em;
-    z-index: 1000;
+    max-width: 650px;
+    padding-right: 4em;
+    padding-left: 36px;
   }
 
   .banner-text p {
-    width: 300px;
+    min-width: 250px;
     padding-bottom: 1em;
   }
 
@@ -525,5 +535,25 @@ footer nav ul a:hover {
     width: 480px;
     right: -80px;
     bottom: -160px;
+  }
+
+  .brandy-text {
+    max-width: 620px;
+    margin: 5em;
+  }
+
+  .button, .adopt-button {
+    padding: 1em 3em;
+    border-radius: 40px;
+  }
+
+  .adopt-button {
+    bottom: 220px;
+    right: 36px;
+  }
+
+  .button {
+    bottom: 120px;
+    right: 36px;
   }
 }
