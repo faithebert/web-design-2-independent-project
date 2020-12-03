@@ -745,20 +745,20 @@ footer nav ul a:hover {
     margin: auto;
   }
 
+  .newsletter {
+    margin: 0;
+  }
+
   .newsletter form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    margin: 0;
+    margin: auto;
     padding: 0;
+    max-width: none;
+    place-content: start;
   }
 
   .newsletter p {
-    display: inline-block;
-    vertical-align: middle;
-  }
-
-  .email-form {
-    display: inline-block;
-    vertical-align: middle;
+    padding: 0 2em;
   }
