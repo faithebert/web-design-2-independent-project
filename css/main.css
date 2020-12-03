@@ -263,7 +263,7 @@ h2 {
   text-align: center;
 }
 
-main div:first-child {
+.about-us {
   text-align: center;
   padding: 175px 72px 72px;
   z-index: -10;
@@ -354,7 +354,9 @@ h4 {
   padding: 36px;
 }
 
-
+.about img {
+  padding: 3em 1em 1em;
+}
 
 .date-number {
   top: 10px;
@@ -556,4 +558,100 @@ footer nav ul a:hover {
     bottom: 120px;
     right: 36px;
   }
-}
+
+  .about, .events {
+    padding: 2.5em;
+  }
+
+  .about-contents {
+    display: flex;
+  }
+
+  .about-contents img, .about-contents p {
+    align-self: center;
+    width: 50%;
+  }
+
+  .about-contents p {
+    min-width: 300px;
+    text-align: right;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 1.5rem;
+  }
+
+  img {
+    overflow: hidden;
+  }
+
+  .card-1 img, .card-2 img, .card-3 img {
+    height: 100%;
+
+  }
+
+  .card-1 {
+    margin-top: 0;
+  }
+
+  .sponsors {
+    padding: 72px 36px;
+  }
+
+  .sponsors-images {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .sponsors-images img {
+    width: 150px;
+  }
+
+  .newsletter form {
+    margin: auto;
+    max-width: 620px;
+  }
+
+  .newsletter label {
+    display: block;
+  }
+
+  .newsletter form input {
+    width: 70%;
+    margin-right: 1em;
+  }
+
+  footer nav ul {
+    text-align: left;
+    position: relative;
+  }
+
+  footer .donate-button {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+  }
+
+  .footer nav ul li {
+    margin: 25px 0;
+  }
+
+  .footer p {
+    max-width: 500px;
+  }
+
+  .footer {
+    position: relative;
+    padding: 3em;
+  }
+
+  .social-icons {
+    position: absolute;
+    bottom: 2px;
+    right: 3em;
+    display: block;
+    width: 50px;
+  }
