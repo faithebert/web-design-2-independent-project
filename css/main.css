@@ -248,6 +248,7 @@ h1 {
   text-decoration: none;
   padding: 1em 3em;
   z-index: 100;
+  transition: background-color .3s linear;
 }
 
 .banner-button:hover {
@@ -334,6 +335,7 @@ h4 {
   position: absolute;
   bottom: 9.375em;
   right: 2.25em;
+  transition: background-color .3s linear;
 }
 
 .adopt-button:hover, .button:hover  {
@@ -349,6 +351,7 @@ h4 {
   position: absolute;
   bottom: 5.625em;
   right: 2.25em;
+  transition: background-color .3s linear;
 }
 
 .about {
@@ -365,7 +368,7 @@ h4 {
 
 .date-number {
   top: 0.625em;
-  left: 1.0625em;
+  left: .625em;
   position: absolute;
   text-shadow: 0.125em 0.125em #414141;
 }
@@ -395,6 +398,8 @@ h4 {
   color: #F4F4F4;
   font-weight: bolder;
   margin-bottom: 1.5625em;
+  transition: filter .5s ease, border .2s ease;
+  background-color: #414141;
 }
 
 .card-1:hover,.card-2:hover, .card-3:hover, .card-1:focus, .card-2:focus, .card-3:focus {
@@ -440,14 +445,16 @@ h4 {
   font-family: inherit;
   border: none;
   text-transform: uppercase;
+  transition: background-color .3s ease;
 }
 
-.sign-up:hover {
+.sign-up:hover, .sign-up:focus {
   background-color: #FF9818;
 }
 
 .footer {
   padding: 0 2.25em;
+  position: relative;
 }
 
 footer nav ul {
@@ -470,12 +477,19 @@ footer nav ul a:hover {
   margin: 1.5625em;
 }
 
+footer .donate-button {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+
 .donate-button a {
   border-radius: 2.5em;
   background-color: #FF9818;
   color: #ffff;
   text-decoration: none;
   padding: .5em 1.5em;
+  transition: background-color .3s ease;
 }
 
 .donate-button a:hover {
@@ -492,8 +506,8 @@ footer nav ul a:hover {
   padding: 2.25em 0 4.6875em;
   display: flex;
   justify-content: center;
-
 }
+
 @media only screen and (min-width: 38em) {
   .mobile-nav {
     display: none;
@@ -520,6 +534,7 @@ footer nav ul a:hover {
     text-transform: uppercase;
     text-decoration: none;
     color: #414141;
+    transition: color 0.3s ease;
   }
 
   .desktop-nav ul li:first-child{
@@ -574,11 +589,23 @@ footer nav ul a:hover {
 
   .about-contents {
     display: flex;
+    position: relative;
+  }
+
+  .about h2 {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+
+  .about {
+    position: relative;
   }
 
   .about-contents img, .about-contents p {
     align-self: center;
     width: 50%;
+    max-width: 26em;
+    margin: auto;
   }
 
   .about-contents p {
@@ -639,8 +666,8 @@ footer nav ul a:hover {
 
   footer .donate-button {
     position: absolute;
-    top: 1.25em;
-    right: 0.625emx;
+    top: .5em;
+    right: 0.625em;
   }
 
   .footer nav ul li {
@@ -653,7 +680,7 @@ footer nav ul a:hover {
 
   .footer {
     position: relative;
-    padding: 3em;
+    padding: 1em 3em 5em;
   }
 
   .social-icons {
@@ -661,8 +688,11 @@ footer nav ul a:hover {
     bottom: 0.125em;
     right: 3em;
     display: block;
-    width: 3.125em;
+    width: 2em;
+    padding: 0;
+    margin: 0;
   }
+
 }
 
 @media only screen and (min-width: 60em) {
@@ -676,7 +706,7 @@ footer nav ul a:hover {
   }
 
   .banner-image {
-    width: 37.5em;
+    width: 30em;
     right: -3.125em;
     bottom: -12.5em;
   }
@@ -717,22 +747,12 @@ footer nav ul a:hover {
 
   .adopt-button {
     bottom: 2.25em;
-    right: 23.125em;
+    right: 15em;
   }
 
   .button {
     bottom: 2.25em;
-    right:  9.375em;
-  }
-
-  .about h2 {
-    position: absolute;
-    top: 10em;
     right: 3em;
-  }
-
-  .about {
-    position: relative;
   }
 
   .cards {
@@ -776,5 +796,16 @@ footer nav ul a:hover {
 
   .social-icons {
     padding-bottom: 2.5em;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+
+  .footer ul {
+      padding: .5em 17em 1em 0;
+  }
+
+  .banner-text {
+    max-width: 50em;
   }
 }
