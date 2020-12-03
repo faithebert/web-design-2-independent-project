@@ -423,7 +423,7 @@ h4 {
 .email-form input {
   width: 100%;
   border: none;
-  margin: 1em 0;
+  margin: .5em 0 1em;
 }
 
 .sign-up {
@@ -487,8 +487,8 @@ footer nav ul a:hover {
   padding: 36px 0 75px;
   display: flex;
   justify-content: center;
-}
 
+}
 @media only screen and (min-width: 38em) {
   .mobile-nav {
     display: none;
@@ -634,7 +634,7 @@ footer nav ul a:hover {
 
   footer .donate-button {
     position: absolute;
-    top: 50px;
+    top: 20px;
     right: 10px;
   }
 
@@ -671,9 +671,9 @@ footer nav ul a:hover {
   }
 
   .banner-image {
-    width: 550px;
-    right: -80px;
-    bottom: -160px;
+    width: 650px;
+    right: -50px;
+    bottom: -250px;
   }
 
   .desktop-nav ul {
@@ -762,3 +762,14 @@ footer nav ul a:hover {
   .newsletter p {
     padding: 0 2em;
   }
+
+  .footer ul {
+      display: flex;
+      padding: .5em 15em 1em 0;
+      justify-content: space-between;
+  }
+
+  .social-icons {
+    padding-bottom: 2.5em;
+  }
+}
