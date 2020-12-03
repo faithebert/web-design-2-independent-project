@@ -454,10 +454,6 @@ h4 {
    margin-left: -10em;
  }
 
- .background img {
-   filter: brightness(50%), grayscale(75%);
- }
-
 .front-image {
   display: none;
 }
