@@ -385,7 +385,6 @@ h4 {
   margin-top: 50px;
 }
 
-
 .card-1, .card-2, .card-3 {
   position: relative;
   color: #F4F4F4;
@@ -462,7 +461,7 @@ footer nav ul a:hover {
 }
 
 .donate-button a {
-  border-radius: 20px;
+  border-radius: 40px;
   background-color: #FF9818;
   color: #ffff;
   text-decoration: none;
@@ -654,4 +653,39 @@ footer nav ul a:hover {
     right: 3em;
     display: block;
     width: 50px;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+
+  .banner-text {
+    max-width: 700px;
+  }
+
+  .banner-text p {
+    max-width: 600px;
+  }
+
+  .banner-image {
+    width: 550px;
+    right: -80px;
+    bottom: -160px;
+  }
+
+  .desktop-nav ul {
+    padding: 50px 75px;
+  }
+
+  .icons {
+    display: flex;
+  }
+
+  .icons div {
+    margin: 0 2em;
+  }
+
+  .pet-spotlight {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
   }
