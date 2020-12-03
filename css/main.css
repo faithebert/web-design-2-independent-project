@@ -215,7 +215,7 @@ img {
 
 h1 {
   text-transform: uppercase;
-  color: #414141;
+  color: #0171A8;
   padding-bottom: .8em;
 }
 
@@ -262,7 +262,7 @@ h2 {
 main div:first-child {
   text-align: center;
   padding: 175px 72px 0;
-  z-index: -2;
+  z-index: -10;
 }
 
 .blue-icon img {
@@ -483,11 +483,47 @@ footer nav ul a:hover {
   }
 
   .desktop-nav {
-    display: flex;
+    display: contents;
+    margin: 0 36px;
   }
 
   .desktop-nav ul {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    padding: 50px 36px;
+  }
+
+  .desktop-nav ul a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #414141;
+  }
+
+  .desktop-nav ul li:first-child{
+    max-width: 150px;
+  }
+
+  .banner-text {
+    min-width: 350px;
+    max-width: 600px;
+    padding-right: 9em;
+    z-index: 1000;
+  }
+
+  .banner-text p {
+    width: 300px;
+    padding-bottom: 1em;
+  }
+
+  h1 {
+    padding-bottom: .3em;
+  }
+
+  .banner-image {
+    width: 480px;
+    right: -80px;
+    bottom: -160px;
   }
 }
