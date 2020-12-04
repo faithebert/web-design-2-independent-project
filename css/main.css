@@ -274,7 +274,7 @@ h1 {
   color: #ffff;
 }
 
-.banner-image {
+.banner-image, .about-banner-image {
   position: absolute;
   right: -5em;
   bottom: -7.5em;
@@ -442,7 +442,9 @@ h4 {
   position: absolute;
   top: 3em;
   left: 1em;
-  padding: .5em;
+  padding: 1em;
+  backdrop-filter: brightness(.4);
+  margin: 2em;
 }
 
 .hours-content p {
@@ -456,6 +458,70 @@ h4 {
 
 .front-image {
   display: none;
+}
+
+.hours {
+  text-transform: uppercase;
+}
+
+.mandate {
+  padding-top: 5em;
+  background-color: #E6F7FF;
+}
+
+.mandate ul {
+  list-style-type: none;
+  text-align: center;
+  padding: 0 3em 5em;
+}
+
+.mandate-list {
+  margin: 0;
+}
+
+.help {
+  padding: 5em 3em;
+  background-color: #ffff;
+}
+
+.help img {
+  width: 15em;
+  margin: auto;
+  padding: 3em 0;
+}
+
+.help p {
+  margin-bottom: 3em;
+}
+
+.btn {
+  border-radius: 2.5em;
+  background-color: #FF9818;
+  color: #ffff;
+  text-decoration: none;
+  padding: .5em 2.5em;
+  transition: background-color .3s ease;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background-color: #414141;
+  color: #ffff;
+}
+
+.more {
+  padding: 5em 3em;
+}
+
+.images {
+  width: 20em;
+  margin: auto;
+}
+
+.video {
+  margin: auto;
+  width: 20em;
+  padding-top: 3em;
 }
 
 /*End of About*/
@@ -520,6 +586,7 @@ footer nav ul {
 footer nav ul a {
   text-decoration: none;
   color: #414141;
+  transition: color .3s ease;
 }
 
 footer nav ul a:hover {
@@ -596,7 +663,7 @@ footer nav ul a:hover {
   }
 
   .banner-text p {
-    min-width: 15.625em;
+    min-width: 10em;
     padding-bottom: 1em;
   }
 
@@ -604,7 +671,7 @@ footer nav ul a:hover {
     padding-bottom: .3em;
   }
 
-  .banner-image {
+  .about-banner-image, .banner-image {
     width: 30em;
     right: -5em;
     bottom: -10em;
@@ -683,6 +750,47 @@ footer nav ul a:hover {
 
   /*End of Homepage*/
 
+  /*About*/
+
+  .about-banner-image {
+    width: 30em;
+    right: -12em;
+    bottom: -7.5em;
+  }
+
+  .mandate {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+
+  .help-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 2em;
+  }
+
+  .help-image, .help-text {
+    place-self: center;
+  }
+
+  .more > .images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr 1fr 1fr 1fr;
+    width: 35em;
+  }
+
+  iframe {
+    width: 100%;
+  }
+
+  .video {
+    width: 35em;
+  }
+
+  /*End of About*/
+
   .sponsors {
     padding: 4.5em 2.25em;
   }
@@ -756,7 +864,7 @@ footer nav ul a:hover {
     max-width: 37.5em;
   }
 
-  .banner-image {
+  .banner-image, .about-banner-image {
     width: 30em;
     right: -3.125em;
     bottom: -12.5em;
