@@ -471,6 +471,8 @@ h4 {
   list-style-type: none;
   text-align: center;
   padding: 0 3em 5em;
+  max-width: 45em;
+  margin: auto;
 }
 
 .mandate-list {
@@ -514,6 +516,15 @@ h4 {
 .images {
   width: 20em;
   margin: auto;
+}
+
+.images div {
+  filter: grayscale(100%);
+  transition: filter .3s ease;
+}
+
+.images div:hover {
+  filter: grayscale(0%);
 }
 
 .video {
