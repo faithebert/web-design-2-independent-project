@@ -443,17 +443,15 @@ h4 {
   top: 3em;
   left: 1em;
   padding: 1em;
-  backdrop-filter: brightness(.4);
   margin: 2em;
-}
-
-.hours-content p {
-  color: #F4F4F4;
+  z-index: 1;
 }
 
 .background {
    width: 90em;
    margin-left: -10em;
+   opacity: 30%;
+   z-index: -1000;
  }
 
 .front-image {
@@ -864,7 +862,7 @@ footer nav ul a:hover {
     max-width: 37.5em;
   }
 
-  .banner-image, .about-banner-image {
+  .banner-image {
     width: 30em;
     right: -3.125em;
     bottom: -12.5em;
@@ -928,6 +926,32 @@ footer nav ul a:hover {
 
   /*End of Homepage*/
 
+  /*About*/
+
+  .about-banner-image {
+    right: -5em;
+  }
+
+  .hours-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 60em;
+    align-self: center;
+  }
+
+  .front-image {
+    display: inline-block;
+    padding: 6em 3em;
+  }
+
+  .more > .images {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 40em;
+  }
+
+  /*End of About*/
+
   .sponsors-images {
     max-width: 62.5em;
     margin: auto;
@@ -974,5 +998,10 @@ footer nav ul a:hover {
 
   .banner-image {
     width: 35em;
+  }
+
+  .front-image {
+    display: inline-block;
+    margin-left: 5em;
   }
 }
