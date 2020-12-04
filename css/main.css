@@ -947,7 +947,7 @@ footer nav ul a:hover {
   .more > .images {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    width: 40em;
+    width: 50em;
   }
 
   /*End of About*/
