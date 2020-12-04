@@ -274,7 +274,7 @@ h1 {
   color: #ffff;
 }
 
-.banner-image, .about-banner-image {
+.banner-image, .about-banner-image, .adopt-banner-image  {
   position: absolute;
   right: -5em;
   bottom: -7.5em;
@@ -535,6 +535,37 @@ h4 {
 
 /*End of About*/
 
+/*Adopt*/
+
+.adopt-banner-image {
+  bottom: -3.5em;
+}
+
+.quiz {
+  overflow: hidden;
+  position: relative;
+  height: 30em;
+}
+
+.quiz > img {
+  width: 45em;
+  margin-left: -5em;
+}
+
+.quiz-text {
+  position: absolute;
+  bottom: .2em;
+  right: 1em;
+  padding: 2em;
+}
+
+.quiz-text h3 {
+  color: #E6F7FF;
+  text-shadow: 0.125em 0.125em #414141;
+}
+
+/*End of Adopt*/
+
 .sponsors {
   background-color: #ffff;
   padding: 6.25em 2.25em;
@@ -680,7 +711,7 @@ footer nav ul a:hover {
     padding-bottom: .3em;
   }
 
-  .about-banner-image, .banner-image {
+  .about-banner-image, .banner-image, .adopt-banner-image {
     width: 30em;
     right: -5em;
     bottom: -10em;

@@ -2,9 +2,11 @@
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
-  <title>Adopt</title>
+  <title>Home</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css\main.css" rel="stylesheet">
+  <link href="css\type.css" rel="stylesheet">
+  <link rel="shortcut icon" href="images/favicon.ico">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
@@ -13,15 +15,16 @@
   <ul class="skip-links">
     <li><a href="#main">Jump to main content</a></li>
     <li><a href="#nav">Jump to navigation</a></li>
-    <li><a href="#adopt">Jump to pets for adoption</a></li>
+    <li><a href="#about">Jump to about us</a></li>
+    <li><a href="#donate">Jump to donate</a></li>
   </ul>
 
   <header role="banner">
-    <div class="covid-announcement">
-      <p>We are currently closed to the public until further notice due to the Covid 19 pandemic. Contact us <a href="#">here</a>.</p>
+    <div class="covid">
+      <p class="milli">We are currently closed to the public until further notice due to the Covid 19 pandemic. Contact us <a href="#">here</a>.</p>
     </div>
 
-    <nav id="nav" role="navigation">
+    <nav class="mobile-nav">
       <div id="menuToggle">
         <input type="checkbox">
 
@@ -30,17 +33,26 @@
         <span></span>
 
         <ul id="menu">
-          <a href="#"><li>Home</li></a>
-          <a href="#"><li>About</li></a>
-          <a class="current" href="#"><li>Adopt</li></a>
+          <a href="index.html"><li>Home</li></a>
+          <a href="about.html"><li>About</li></a>
+          <a class="current" href="adopt.html"><li>Adopt</li></a>
         </ul>
       </div>
 
       <a href="index.html">
-        <i>
-          <img src="images/svg/icon.svg" alt="">
+        <i class="mobile-logo">
+          <img src="images/svg/icon.svg" alt="Arnprior Humane Society Logo: A hand holding a paw against a black paw graphic">
         </i>
       </a>
+    </nav>
+
+    <nav id="nav" role="navigation" class="desktop-nav semi-bold">
+      <ul>
+        <a href="index.html"><li><img src="images/png/primary-logo.png" alt="Large Arnprior Humane Society Logo: A hand holding a paw against a black paw graphic"></li></a>
+        <a href="about.html"><li>About</li></a>
+        <a class="current" href="adopt.html"><li>Adopt</li></a>
+        <a class="donate-button" href="#"><li>Donate</li></a>
+      </ul>
     </nav>
 
     <div class="banner">
@@ -49,7 +61,7 @@
         <p>Give a pet your love and they will reward you with their unlimited affection for the rest of their lives. All they ask for is a chance.</p>
         <a class="banner-button" href="#">Contact</a>
       </div>
-      <div class="banner-image">
+      <div class="adopt-banner-image">
         <img src="images/png/banner-adopt.png" alt="">
       </div>
     </div>
@@ -60,7 +72,7 @@
       <img src="images/jpg/b+w+quiz-pic.jpg" alt="">
       <div class="quiz-text">
         <h3>NOT SURE IF YOU'RE READY TO ADOPT A PET?</h3>
-        <a class="button" href="#">Take the quiz</a>
+        <a class="btn" href="#">Take the quiz</a>
       </div>
     </div>
     <div id="adopt" class="adoptable">
@@ -163,30 +175,32 @@
       <p>Very few things in life can compare to the unconditional love, companionship and fun given by our animal friends!</p>
       <p>If it’s time for a new pet in your life, you will surely find your perfect companion at the Arnprior & District Humane Society. There are so many wonderful pets at our shelter- cats and dogs of all ages, shapes, sizes and breeds, waiting in hope for a home, someone to share life with, someone to love.</p>
       <p class="bold">Make adoption your first option – and find your friend for life today!</p>
-
     </div>
 
   </main>
 
   <footer>
     <div class="sponsors">
-      <h4>Thank you to our sponsors</h4>
-      <img src="images/png/pedigree-logo.png" alt="">
-      <img src="images/png/Royal_Canin_logo.png" alt="">
-      <img src="images/png/petvalue-logo.png" alt="">
+      <h4 class="semi-bold">Thank you to our sponsors</h4>
+      <div class="sponsors-images">
+        <img src="images/png/pedigree-logo.png" alt="The Pedigree logo">
+        <img src="images/png/Royal_Canin_logo.png" alt="The Royal Canin logo">
+        <img src="images/png/petvalu-logo.png" alt="The Petvalu logo">
+      </div>
     </div>
     <div class="newsletter">
       <form id="form" method="POST" action="https://formspree.io/missfaithannee@gmail.com">
         <p>Want photos of cute kitties and pups sent to your inbox? We know, so do we! Sign up for our newsletter to keep updated on all things Arnprior Humane Society.</p>
-        <div>
-          <label for="email">Enter your email</label>
+        <div class="email-form">
+          <label class="milli" for="email">Enter your email</label>
           <input type="email" id="email" required>
+          <button class="sign-up semi-bold" type="submit" name="button">Sign Up</button>
         </div>
       </form>
     </div>
     <div role="contentinfo" class="footer">
       <nav>
-        <ul>
+        <ul class="semi-bold giga">
           <li>
             <a href="index.html">Home</a>
           </li>
@@ -201,32 +215,31 @@
           </li>
         </ul>
       </nav>
-      <p>The Arnprior & District Humane Society can only accept animals from the local bylaw officers.  If you have found a stray cat or dog in Arnprior, or a stray dog in McNab/Braeside please contact 613 809-7048 to arrange pick up</p>
-      <p>If you suspect <span class="bold">Animal Cruelty or Neglect</span> please call the Government of Ontario’s  new toll-free number available 24/7 to report animal welfare concerns: 1-833-9ANIMAL (1-833-926-4625)</p>
+      <p>The Arnprior & District Humane Society can only accept animals from the local bylaw officers.  If you have found a stray cat or dog in Arnprior, or a stray dog in McNab/Braeside please contact 000-888-555 to arrange pick up</p>
+      <p>If you suspect <span class="bold">Animal Cruelty or Neglect</span> please call the Government of Ontario’s new toll-free number available 24/7 to report animal wellfare concerns: 1-333-111-3543</p>
       <div class="social-icons">
         <a href="#">
           <i>
-            <img src="images/png/facebook.png" alt="">
+            <img src="images/png/facebook.png" alt="Facebook icon">
           </i>
         </a>
         <a href="#">
           <i>
-            <img src="images/png/youtube.png" alt="">
+            <img src="images/png/youtube.png" alt="Youtube icon">
           </i>
         </a>
         <a href="#">
           <i>
-            <img src="images/png/twitter.png" alt="">
+            <img src="images/png/twitter.png" alt="Twitter icon">
           </i>
         </a>
         <a href="#">
           <i>
-            <img src="images/png/instagram.png" alt="">
+            <img src="images/png/instagram.png" alt="Instagram icon">
           </i>
         </a>
       </div>
     </div>
   </footer>
-
-</body>
-</html>
+  </body>
+  </html>
