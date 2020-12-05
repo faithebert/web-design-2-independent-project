@@ -569,18 +569,8 @@ h4 {
   background-color: #ffff;
 }
 
-.adoptable input {
-  display: inline;
-}
-
-.inputs {
-  text-align: center;
-  margin: 1em;
-  color: #0171A8;
-}
-
-input[name=cats]:checked ~ .pets div:not([data-type=cats]),
-input[name=dogs]:checked ~ .pets div:not([data-type=dogs]){
+input[name=cats]:checked ~ .pets > div:not([data-type=cats]),
+input[name=dogs]:checked ~ .pets > div:not([data-type=dogs]){
   display: none;
 }
 
