@@ -569,6 +569,21 @@ h4 {
   background-color: #ffff;
 }
 
+.adoptable input {
+  display: inline;
+}
+
+.inputs {
+  text-align: center;
+  margin: 1em;
+  color: #0171A8;
+}
+
+input[name=cats]:checked ~ .items div:not([data-type=cats]),
+input[name=dogs]:checked ~ .items div:not([data-type=dogs]){
+  display: none;
+}
+
 .pets > div > img {
   grid-area: pet-photo;
   padding: 1em;
@@ -661,6 +676,18 @@ h5 {
 .adopt-steps a {
   margin: auto;
 }
+
+.why-adopt {
+  padding: 7em 2.25em;
+}
+
+.why-adopt img {
+  padding: 2em;
+  max-width: 30em;
+  margin: auto;
+}
+
+
 
 /*End of Adopt*/
 
