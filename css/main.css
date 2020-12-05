@@ -564,6 +564,104 @@ h4 {
   text-shadow: 0.125em 0.125em #414141;
 }
 
+.adoptable {
+  padding: 7em 2.25em;
+  background-color: #ffff;
+}
+
+.pets > div > img {
+  grid-area: pet-photo;
+  padding: 1em;
+  align-self: center;
+}
+
+.pets > div > span:first-child {
+  grid-area: filter-1;
+}
+
+.pets > div > span:nth-child(2) {
+  grid-area: filter-2;
+}
+
+.pets > div > a {
+  grid-area: button;
+}
+
+.pets > div > .description {
+  grid-area: description;
+  padding: .5em;
+}
+
+.pets > div {
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 5;
+  grid-template-areas:
+  "pet-photo description"
+  "pet-photo description"
+  "filter-1 description"
+  "filter-2 description"
+  "button description"
+}
+
+.pets span, .pets a {
+  text-align: center;
+}
+
+.pets a {
+  background-color: #FF9818;
+  color: #ffff;
+  width: 65%;
+  margin: auto;
+  margin-top: 1em;
+  border-radius: 2.5em;
+  text-decoration: none;
+  padding: .75em 1.5em;
+  text-transform: uppercase;
+}
+
+.pets a:hover {
+  background-color: #414141;
+  transition: background-color .3s ease, font-weight .5s ease;
+  font-weight: bold;
+}
+
+h5 {
+  color: #FF9818;
+}
+
+.pets > div > span {
+  background-color: #E6F7FF;
+  margin-top: .5em;
+}
+
+.adopt-steps {
+  padding: 7em 2.25em;
+  background-color: #E6F7FF;
+  text-align: center;
+}
+
+.adopt-steps ol {
+  list-style-type: none;
+  padding: 1em;
+}
+
+.adopt-steps img {
+  width: 5em;
+  margin: auto;
+  margin-bottom: 2em;
+  margin-top: 4em;
+}
+
+.adopt-steps h3 {
+  color: #0171A8;
+  font-weight: normal;
+}
+
+.adopt-steps a {
+  margin: auto;
+}
+
 /*End of Adopt*/
 
 .sponsors {
