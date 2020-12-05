@@ -579,8 +579,8 @@ h4 {
   color: #0171A8;
 }
 
-input[name=cats]:checked ~ .items div:not([data-type=cats]),
-input[name=dogs]:checked ~ .items div:not([data-type=dogs]){
+input[name=cats]:checked ~ .pets div:not([data-type=cats]),
+input[name=dogs]:checked ~ .pets div:not([data-type=dogs]){
   display: none;
 }
 
