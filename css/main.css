@@ -238,17 +238,23 @@ a:focus {
 h1 {
   text-transform: uppercase;
   color: #0171A8;
-  padding-bottom: .8em;
 }
 
-.banner {
-  margin: 0 2.25em 3.375em;
+.banner-image {
+  overflow: hidden;
+  filter: blur(2px);
+  height: 650px;
+  width: 100%;
   position: relative;
+  z-index: -1000;
 }
 
-.banner-text {
-  z-index: 1000;
-  position: relative;
+.banner-image img {
+  width: auto;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .banner-text p {
@@ -256,7 +262,13 @@ h1 {
   max-width: 18.75em;
   margin: 0 10em 2em 0;
   padding-bottom: 1em;
-  text-shadow: 0.1em 0.1em #ffff;
+}
+
+.banner-text {
+  padding-right: 2em;
+  position: absolute;
+  bottom: 3em;
+  left: 2em;
 }
 
 .banner-button {
@@ -274,15 +286,6 @@ h1 {
   color: #ffff;
 }
 
-.banner-image, .about-banner-image, .adopt-banner-image  {
-  position: absolute;
-  right: -5em;
-  bottom: -7.5em;
-  width: 20em;
-  z-index: 1;
-  opacity: 0.8;
-}
-
 h2 {
   color: #0171A8;
   text-align: center;
@@ -292,8 +295,7 @@ h2 {
 
 .about-us {
   text-align: center;
-  padding: 10.9375em 4.5em 4.5em;
-  z-index: -10;
+  padding: 4.5em;
 }
 
 .about-us p {
@@ -536,10 +538,6 @@ h4 {
 /*End of About*/
 
 /*Adopt*/
-
-.adopt-banner-image {
-  bottom: -3.5em;
-}
 
 .quiz {
   overflow: hidden;
@@ -789,7 +787,6 @@ footer nav ul a:hover {
 
   .desktop-nav {
     display: contents;
-    margin: 0 2.25em;
   }
 
   .desktop-nav ul {
@@ -797,7 +794,9 @@ footer nav ul a:hover {
     justify-content: space-between;
     align-items: center;
     list-style-type: none;
-    padding: 3.125em 2.25em;
+    padding: .75em 3em;
+    margin: 0;
+    background-color: #fff;
   }
 
   .desktop-nav ul a:hover {
@@ -825,16 +824,6 @@ footer nav ul a:hover {
   .banner-text p {
     min-width: 10em;
     padding-bottom: 1em;
-  }
-
-  h1 {
-    padding-bottom: .3em;
-  }
-
-  .about-banner-image, .banner-image, .adopt-banner-image {
-    width: 30em;
-    right: -5em;
-    bottom: -10em;
   }
 
   /*Homepage*/
@@ -911,13 +900,6 @@ footer nav ul a:hover {
   /*End of Homepage*/
 
   /*About*/
-
-  .about-banner-image, .adopt-banner-image  {
-    width: 30em;
-    right: -12em;
-    bottom: -7.5em;
-    z-index: -1000;
-  }
 
   .mandate {
     padding-left: 3em;
@@ -1063,12 +1045,6 @@ footer nav ul a:hover {
     max-width: 37.5em;
   }
 
-  .banner-image {
-    width: 30em;
-    right: -3.125em;
-    bottom: -12.5em;
-  }
-
   .desktop-nav ul {
     padding: 3.125em 4.6875em;
   }
@@ -1128,10 +1104,6 @@ footer nav ul a:hover {
   /*End of Homepage*/
 
   /*About*/
-
-  .about-banner-image {
-    right: -5em;
-  }
 
   .hours-content {
     display: grid;
@@ -1256,10 +1228,6 @@ footer nav ul a:hover {
 
   .banner-text {
     max-width: 50em;
-  }
-
-  .banner-image {
-    width: 35em;
   }
 
   .front-image {
