@@ -245,6 +245,7 @@ h1 {
   width: 100%;
   position: relative;
   z-index: -1000;
+  background-color: #f1f1f1;
 }
 
 .banner-image img, .about-banner-image img {
@@ -271,7 +272,7 @@ h1 {
 .banner-text {
   padding-right: 2em;
   position: absolute;
-  bottom: 6em;
+  bottom: 10em;
   left: 2em;
 }
 
@@ -515,6 +516,7 @@ h4 {
 
 .more {
   padding: 5em 3em;
+  background-color: #f4f4f4;
 }
 
 .images {
@@ -821,6 +823,7 @@ footer nav ul a:hover {
     max-width: 40.625em;
     padding-right: 4em;
     padding-left: 2.25em;
+    bottom: 8em;
   }
 
   .banner-text p {
@@ -1039,14 +1042,17 @@ footer nav ul a:hover {
 
 @media only screen and (min-width: 60em) {
 
-  .banner-image img, .about-banner-image img {
+  .banner-image img, .about-banner-image img, .background img {
     width: 100%;
     height: auto;
   }
 
+  .background {
+    margin-left: 0;
+  }
+
   .banner-text {
     max-width: 43.75em;
-    bottom: 10em;
   }
 
   .banner-text p {
@@ -1232,11 +1238,10 @@ footer nav ul a:hover {
 
   .banner-text {
     max-width: 50em;
-    bottom: 7em;
   }
 
   .front-image {
     display: inline-block;
-    margin-left: 5em;
+    margin-left: 8em;
   }
 }
