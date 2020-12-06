@@ -14,7 +14,6 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
 
-  background-color: #F4F4F4;
   color: #414141;
 }
 
@@ -137,8 +136,8 @@ a:focus {
   position: absolute;
   width: 100%;
   margin: -3.125em 0 0 -3.125em;
-  padding: 2.5em;
-  padding-top: 5em;
+  padding: 4em;
+  padding-top: 6em;
 
   background: #ffff;
   list-style-type: none;
@@ -193,7 +192,7 @@ a:focus {
   z-index: 10000;
   background-color: #0171A8;
   border: 0;
-  color: #fff;
+  color: #ffff;
   font-size: 1.125rem;
   font-weight: bold;
   text-decoration: none;
@@ -219,7 +218,7 @@ a:focus {
 
 .mobile-nav {
   position: relative;
-  margin-bottom: 10em;
+  margin-bottom: 5em;
   z-index: 10000;
 }
 
@@ -240,21 +239,26 @@ h1 {
   color: #0171A8;
 }
 
-.banner-image {
+.banner-image, .about-banner-image {
   overflow: hidden;
-  filter: blur(2px);
   height: 650px;
   width: 100%;
   position: relative;
   z-index: -1000;
 }
 
-.banner-image img {
+.banner-image img, .about-banner-image img {
   width: auto;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
+  filter: brightness(120%);
+}
+
+.about-banner-image img {
+  filter: none;
+  filter: brightness(105%);
 }
 
 .banner-text p {
@@ -267,7 +271,7 @@ h1 {
 .banner-text {
   padding-right: 2em;
   position: absolute;
-  bottom: 3em;
+  bottom: 6em;
   left: 2em;
 }
 
@@ -377,12 +381,12 @@ h4 {
   transition: background-color .3s linear;
 }
 
-.about {
-  background-color: #ffff;
-}
-
 .about, .events {
   padding: 2.25em;
+}
+
+.events {
+  background-color: #F4F4F4;
 }
 
 .about img {
@@ -437,7 +441,6 @@ h4 {
 .hours-about {
   position: relative;
   overflow: hidden;
-  margin-top: 7.5em;
 }
 
 .hours-content {
@@ -483,7 +486,6 @@ h4 {
 
 .help {
   padding: 5em 3em;
-  background-color: #ffff;
 }
 
 .help img {
@@ -565,7 +567,6 @@ h4 {
 
 .adoptable {
   padding: 7em 2.25em;
-  background-color: #ffff;
 }
 
 input[name=cats]:checked ~ .pets > div:not([data-type=cats]),
@@ -732,6 +733,7 @@ h5 {
 .footer {
   padding: 0 2.25em;
   position: relative;
+  background-color: #F4F4F4;
 }
 
 footer nav ul {
@@ -1037,16 +1039,18 @@ footer nav ul a:hover {
 
 @media only screen and (min-width: 60em) {
 
+  .banner-image img, .about-banner-image img {
+    width: 100%;
+    height: auto;
+  }
+
   .banner-text {
     max-width: 43.75em;
+    bottom: 10em;
   }
 
   .banner-text p {
     max-width: 37.5em;
-  }
-
-  .desktop-nav ul {
-    padding: 3.125em 4.6875em;
   }
 
   .icons {
@@ -1094,7 +1098,7 @@ footer nav ul a:hover {
   .cards {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    padding: 4em;
+    padding: 4em 4em 0;
   }
 
   .events h2 {
@@ -1228,6 +1232,7 @@ footer nav ul a:hover {
 
   .banner-text {
     max-width: 50em;
+    bottom: 7em;
   }
 
   .front-image {
