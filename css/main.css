@@ -245,7 +245,7 @@ h1 {
   width: 100%;
   position: relative;
   z-index: -1000;
-  background-color: #f1f1f1;
+  background-color: #FFFBF5;
 }
 
 .banner-image img, .about-banner-image img {
@@ -254,11 +254,10 @@ h1 {
   position: absolute;
   top: 0;
   left: 0;
-  filter: brightness(120%);
+  filter: brightness(110%);
 }
 
-.about-banner-image img {
-  filter: none;
+.about-banner-image img{
   filter: brightness(105%);
 }
 
@@ -274,6 +273,7 @@ h1 {
   position: absolute;
   bottom: 10em;
   left: 2em;
+  padding-bottom: 2em;
 }
 
 .banner-button {
