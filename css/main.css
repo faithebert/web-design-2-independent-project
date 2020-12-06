@@ -1101,6 +1101,10 @@ footer nav ul a:hover {
     right: 3em;
   }
 
+  .help-image img {
+    width: 20em;
+  }
+
   .cards {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
