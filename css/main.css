@@ -972,10 +972,7 @@ footer nav ul a:hover {
   .sponsors-images {
     display: flex;
     justify-content: space-around;
-  }
-
-  .sponsors-images img {
-    width: 9.375em;
+    width: 30em;
   }
 
   .newsletter form {
