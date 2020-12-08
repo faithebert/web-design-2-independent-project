@@ -675,7 +675,7 @@ h5 {
 
 .sponsors {
   background-color: #fff;
-  padding: 2.25em;
+  padding: 6.25em 2.25em;
 }
 
 .sponsors h3 {
@@ -687,6 +687,7 @@ h5 {
 
 .sponsors img {
   width: 12em;
+  margin: auto;
   padding-top: 3em;
 }
 
@@ -965,6 +966,7 @@ footer nav ul a:hover {
 
   .sponsors {
     padding: 4.5em 2.25em;
+
   }
 
   .sponsors-images {
@@ -1189,8 +1191,6 @@ footer nav ul a:hover {
   .sponsors-images {
     max-width: 62.5em;
     margin: auto;
-    margin-top: 0;
-    margin-bottom: 0;
   }
 
   .newsletter {
