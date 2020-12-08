@@ -588,7 +588,7 @@ input[name="cats"]:checked ~ .pets > div:not([data-type="cats"]), input[name="do
 .pets > div {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas:
     "pet-photo description"
     "pet-photo description"
@@ -803,6 +803,10 @@ footer nav ul a:hover {
 
   .desktop-nav ul li:first-child {
     max-width: 9.375em;
+  }
+
+  .primary-logo a img:hover {
+    border: 2px solid #ff9818;
   }
 
   .banner-text {
@@ -1164,8 +1168,7 @@ footer nav ul a:hover {
       "pet-photo description description"
       "filter-1 description description"
       "filter-2 description description"
-      "button description description"
-      "blank description description";
+      "button description description";
   }
 
   .adopt-steps {
