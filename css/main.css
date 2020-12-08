@@ -544,7 +544,7 @@ h4 {
 
 .quiz-text {
   position: absolute;
-  bottom: .2em;
+  bottom: 5em;
   right: 1em;
   padding: 2em;
 }
@@ -966,7 +966,6 @@ footer nav ul a:hover {
 
   .sponsors {
     padding: 4.5em 2.25em;
-    max-height: 15em;
   }
 
   .sponsors-images {
@@ -1144,6 +1143,7 @@ footer nav ul a:hover {
     width: 50%;
     background-color: #e6f7ff;
     padding: 15em 2em 2em;
+    bottom: 10em;
   }
 
   .quiz-text h3 {
