@@ -966,7 +966,7 @@ footer nav ul a:hover {
 
   .sponsors {
     padding: 4.5em 2.25em;
-
+    max-height: 15em;
   }
 
   .sponsors-images {
