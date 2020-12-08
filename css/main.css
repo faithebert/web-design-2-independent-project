@@ -1189,6 +1189,8 @@ footer nav ul a:hover {
   .sponsors-images {
     max-width: 62.5em;
     margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .newsletter {
