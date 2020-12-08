@@ -975,6 +975,10 @@ footer nav ul a:hover {
     width: 30em;
   }
 
+  img {
+    width: 100%;
+  }
+
   .newsletter form {
     margin: auto;
     max-width: 38.75em;
