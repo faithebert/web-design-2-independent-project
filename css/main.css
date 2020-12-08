@@ -258,7 +258,7 @@ h1 {
 .banner-text {
   padding-right: 2em;
   position: absolute;
-  bottom: 4em;
+  bottom: 5em;
   left: 2em;
   padding-bottom: 2em;
 }
@@ -544,7 +544,7 @@ h4 {
 
 .quiz-text {
   position: absolute;
-  bottom: 5em;
+  bottom: .2em;
   right: 1em;
   padding: 2em;
 }
@@ -966,7 +966,7 @@ footer nav ul a:hover {
 
   .sponsors {
     padding: 4.5em 2.25em;
-    max-height: 15em;
+    max-height: 25em;
   }
 
   .sponsors-images {
@@ -1144,7 +1144,6 @@ footer nav ul a:hover {
     width: 50%;
     background-color: #e6f7ff;
     padding: 15em 2em 2em;
-    bottom: 10em;
   }
 
   .quiz-text h3 {
