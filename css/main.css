@@ -566,6 +566,7 @@ input[name="cats"]:checked ~ .pets > div:not([data-type="cats"]), input[name="do
   grid-area: pet-photo;
   padding: 1em;
   align-self: center;
+  width: 15em;
 }
 
 .pets > div > span:first-child {
@@ -588,13 +589,16 @@ input[name="cats"]:checked ~ .pets > div:not([data-type="cats"]), input[name="do
 .pets > div {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: auto;
   grid-template-areas:
     "pet-photo description"
     "pet-photo description"
     "filter-1 description"
     "filter-2 description"
     "button description";
+  justify-content: center;
+  align-content: center;
+  width: 100%;
 }
 
 .pets span, .pets a {
@@ -942,17 +946,47 @@ footer nav ul a:hover {
   }
 
   .quiz-text {
-    bottom: 3em;
+    top: 1em;
     left: 1em;
+  }
+
+  .pet-1 {
+    grid-area: pet-1;
+  }
+
+  .pet-2 {
+    grid-area: pet-2;
+  }
+
+  .pet-3 {
+    grid-area: pet-3;
+  }
+
+  .pet-4 {
+    grid-area: pet-4;
+  }
+
+  .pet-5 {
+    grid-area: pet-5;
+  }
+
+  .pet-6 {
+    grid-area: pet-6;
   }
 
   .pets {
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
     grid-template-areas:
       "pet-1 pet-2"
       "pet-3 pet-4"
       "pet-5 pet-6";
-    gap: 3em;
+  }
+
+  .pets > div > img {
+    max-width: 15em;
+    width: inherit;
   }
 
   .adopt-steps ol {
@@ -1156,19 +1190,16 @@ footer nav ul a:hover {
   }
 
   .pets {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 3em;
     grid-template-areas:
       "pet-1 pet-2 pet-3"
-      "pet-4 pet-4 pet-6";
-    max-width: 90em;
-    margin: auto;
+      "pet-4 pet-5 pet-6";
   }
 
-  .pets > div {
-    grid-template-areas:
-      "pet-photo description description"
-      "filter-1 description description"
-      "filter-2 description description"
-      "button description description";
+  .pets > div > a {
+    width: 100%;
   }
 
   .adopt-steps {
